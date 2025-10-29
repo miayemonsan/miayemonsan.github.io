@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -14,10 +13,10 @@
   }
   .container {
     max-width: 900px;
-    margin: 30px auto;
+    margin: 40px auto;
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -25,9 +24,9 @@
 
   /* Sidebar */
   .sidebar {
-    background: #6a0dad; /* Purple color */
+    background: #6a0dad; /* Purple */
     color: #fff;
-    padding: 40px 20px;
+    padding: 40px 25px;
     flex: 1 1 35%;
     min-width: 280px;
   }
@@ -39,20 +38,22 @@
     margin-bottom: 25px;
   }
   .profile img {
-    width: 100px; /* Good size for README */
-    height: 100px;
-    border-radius: 12px;
+    width: 90px; 
+    height: 90px;
+    border-radius: 50%;
     margin-right: 15px;
     object-fit: cover;
+    border: 3px solid #fff;
   }
   .profile-info h1 {
     font-size: 22px;
     margin: 0;
+    font-weight: 600;
   }
   .profile-info h2 {
     font-size: 16px;
     font-weight: 400;
-    margin: 5px 0 0 0;
+    margin: 4px 0 0 0;
   }
 
   .sidebar hr {
@@ -71,7 +72,7 @@
   /* Main content */
   .main {
     flex: 1 1 65%;
-    padding: 40px;
+    padding: 40px 35px;
     min-width: 300px;
   }
   .main h3 {
@@ -117,6 +118,7 @@
     }
     .profile {
       flex-direction: row;
+      margin-bottom: 20px;
     }
   }
 </style>
