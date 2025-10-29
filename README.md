@@ -1,4 +1,4 @@
-<div style="display:flex; align-items:center; justify-content:flex-end; background:#e6d6f7; padding:40px; border-radius:16px; color:#333; font-family:'Poppins',sans-serif; margin-bottom:20px;">
+<div style="display:flex; align-items:center; justify-content:flex-end; background:#e6d6f7; padding:40px; border-radius:16px; color:#333; font-family:'Poppins',sans-serif; margin-bottom:7px;">
   
   <!-- Name and Title -->
   <div style="text-align:right; margin-right:20px;">
