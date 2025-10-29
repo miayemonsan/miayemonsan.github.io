@@ -75,11 +75,15 @@
     <p><b>Accountant — Nay La Kabar Co., Ltd</b> (Nov 2018 – Jan 2019)</p>
     <ul>
       <li>Handled financial records and assisted in preparing daily reports.</li>
+      <li>Reconciled invoices and monitored company expenses.</li>
+      <li>Assisted in preparing monthly financial statements and summaries.</li>
     </ul>
 
     <p><b>Volunteer Teacher — Chiang Rai Kindergarten</b> (Jan 2025)</p>
     <ul>
       <li>Assisted in school improvement projects and English-related activities.</li>
+      <li>Organized fun and educational activities to enhance student engagement.</li>
+      <li>Supported teachers in lesson planning and classroom management.</li>
     </ul>
 
     <h3 style="color:#4b0082; border-bottom:3px solid #d0b3f2;">🎓 Education</h3>
