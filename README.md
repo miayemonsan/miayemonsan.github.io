@@ -1,5 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aye Mon San - Resume</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
   body {
     font-family: 'Poppins', sans-serif;
@@ -17,46 +22,60 @@
     flex-wrap: wrap;
     overflow: hidden;
   }
+
+  /* Sidebar */
   .sidebar {
-    background: #0077b6;
+    background: #6a0dad; /* Purple color */
     color: #fff;
     padding: 40px 20px;
     flex: 1 1 35%;
     min-width: 280px;
   }
-  .sidebar img {
-    width: 100%;
+
+  /* Profile section */
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .profile img {
+    width: 100px; /* Good size for README */
+    height: 100px;
     border-radius: 12px;
-    margin-bottom: 20px;
+    margin-right: 15px;
+    object-fit: cover;
   }
-  .sidebar h1 {
-    font-size: 28px;
-    margin: 10px 0;
+  .profile-info h1 {
+    font-size: 22px;
+    margin: 0;
   }
-  .sidebar h2 {
-    font-size: 18px;
+  .profile-info h2 {
+    font-size: 16px;
     font-weight: 400;
-    margin-bottom: 15px;
+    margin: 5px 0 0 0;
+  }
+
+  .sidebar hr {
+    border: 0.5px solid #d3a4ff;
+    margin: 20px 0;
   }
   .sidebar p, .sidebar li {
     font-size: 14px;
     line-height: 1.6;
   }
-  .sidebar hr {
-    border: 0.5px solid #00b4d8;
-    margin: 20px 0;
-  }
   .sidebar ul {
     list-style: none;
     padding-left: 0;
   }
+
+  /* Main content */
   .main {
     flex: 1 1 65%;
     padding: 40px;
     min-width: 300px;
   }
   .main h3 {
-    color: #0077b6;
+    color: #6a0dad;
     margin-bottom: 10px;
     font-size: 18px;
   }
@@ -78,12 +97,27 @@
   .languages th {
     width: 40%;
   }
+
   a {
-    color: #00b4d8;
+    color: #d3a4ff;
     text-decoration: none;
   }
   a:hover {
     text-decoration: underline;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .sidebar, .main {
+      flex: 1 1 100%;
+      min-width: auto;
+    }
+    .profile {
+      flex-direction: row;
+    }
   }
 </style>
 </head>
@@ -92,9 +126,14 @@
 <div class="container">
   <!-- Sidebar -->
   <div class="sidebar">
-    <img src="amscvphoto.jpg" alt="Aye Mon San Photo">
-    <h1>Aye Mon San</h1>
-    <h2>Aspiring English Instructor</h2>
+    <div class="profile">
+      <img src="amscvphoto.jpg" alt="Aye Mon San Photo">
+      <div class="profile-info">
+        <h1>Aye Mon San</h1>
+        <h2>English Instructor</h2>
+      </div>
+    </div>
+
     <p>Chiang Mai, Thailand</p>
     <p>📧 <a href="mailto:miayemonsan34@gmail.com">miayemonsan34@gmail.com</a></p>
     <p>📞 092-396-9849</p>
