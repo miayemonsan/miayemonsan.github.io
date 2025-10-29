@@ -90,7 +90,7 @@
     <h3 style="color:#4b0082; border-bottom:3px solid #d0b3f2;">🔗 Online Presence</h3>
     <p><a href="mailto:miayemonsan34@gmail.com" style="color:#4b0082;">Email</a></p>
     <p><a href="https://github.com/yourusername" target="_blank" style="color:#4b0082;">GitHub</a></p>
-    <p>LinkedIn — (Add if available)</p>
+    <p>LinkedIn — (www.linkedin.com/in/mi-aye-mon-san-328346295)</p>
 
   </div>
 </div>
