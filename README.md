@@ -87,9 +87,9 @@
     </ul>
 
     <h3 style="color:#4b0082; border-bottom:3px solid #d0b3f2;">Education</h3>
-    <p>B.A. English Communication Arts — Payap University (2024 – Present)</p>
-    <p>Associate Degree — Mon National College (2021 – 2024)</p>
-    <p>B.A. English — Hpa-An Distant University (2018 – 2019)</p>
+    <p>B.A. English Communication Arts; Payap University (2024 – Present)</p>
+    <p>Associate Degree; Mon National College (2021 – 2024)</p>
+    <p>B.A. English; Hpa-An Distant University (2018 – 2019)</p>
 
     <h3 style="color:#4b0082; border-bottom:3px solid #d0b3f2;"> Online Presence</h3>
     <p>LinkedIn</p>
