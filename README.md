@@ -1,14 +1,28 @@
-<div style="display:flex; flex-wrap:wrap; font-family:'Poppins',sans-serif; background:#f4f7f8; padding:20px; border-radius:12px;">
+<div style="display:flex; align-items:center; justify-content:flex-end; background:#e6d6f7; padding:40px; border-radius:16px; color:#333; font-family:'Poppins',sans-serif; margin-bottom:20px;">
+  
+  <!-- Name and Title -->
+  <div style="text-align:right; margin-right:20px;">
+    <h1 style="margin:0; font-size:2.5em; font-weight:700; color:#4b0082;">Aye Mon San</h1>
+    <h3 style="margin-top:8px; font-weight:500; color:#555;">English Instructor</h3>
+  </div>
 
-  <!-- SIDEBAR -->
-  <div style="flex:1; min-width:250px; background:#f9f9f9; padding:25px; border-radius:12px; line-height:1.6; border-right:1px solid #e0e0e0; margin-right:20px;">
-    
-    <h3 style="color:#8000ff; border-bottom:2px solid #8000ff; padding-bottom:5px;">📇 Contact</h3>
+  <!-- Photo -->
+  <div style="flex-shrink:0;">
+    <img src="amscvphoto.jpg" alt="Aye Mon San Photo" width="150" style="border-radius:50%; border:4px solid #fff; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+  </div>
+</div>
+
+<div style="display:flex; flex-wrap:wrap; font-family:'Poppins',sans-serif;">
+
+  <!-- Sidebar -->
+  <div style="flex:1; min-width:250px; background:#e6d6f7; padding:25px; border-right:1px solid #d0b3f2; line-height:1.6;">
+
+    <h3 style="color:#4b0082; border-bottom:2px solid #4b0082;">📇 Contact</h3>
     <p><b>Phone:</b> 092-396-9849</p>
-    <p><b>Email:</b> <a href="mailto:miayemonsan34@gmail.com" style="color:#8000ff; text-decoration:none;">miayemonsan34@gmail.com</a></p>
+    <p><b>Email:</b> <a href="mailto:miayemonsan34@gmail.com" style="color:#4b0082; text-decoration:none;">miayemonsan34@gmail.com</a></p>
     <p><b>Address:</b> Chiang Mai, Thailand</p>
 
-    <h3 style="color:#8000ff; border-bottom:2px solid #8000ff; padding-bottom:5px;">👤 Personal Info</h3>
+    <h3 style="color:#4b0082; border-bottom:2px solid #4b0082;">👤 Personal Info</h3>
     <ul style="list-style:none; padding:0;">
       <li><b>Gender:</b> Male</li>
       <li><b>DOB:</b> 30 September 1998</li>
@@ -17,17 +31,17 @@
       <li><b>Height/Weight:</b> 164 cm / 52 kg</li>
     </ul>
 
-    <h3 style="color:#8000ff; border-bottom:2px solid #8000ff; padding-bottom:5px;">🌍 Languages</h3>
+    <h3 style="color:#4b0082; border-bottom:2px solid #4b0082;">🌐 Languages</h3>
     <ul>
-      <li>Mon — Native</li>
-      <li>Burmese — Fluent</li>
-      <li>English — Proficient</li>
-      <li>Thai — Intermediate</li>
+      <li>Mon (Native)</li>
+      <li>Burmese (Fluent)</li>
+      <li>English (Proficient)</li>
+      <li>Thai (Intermediate)</li>
     </ul>
 
-    <h3 style="color:#8000ff; border-bottom:2px solid #8000ff; padding-bottom:5px;">⭐ Skills</h3>
+    <h3 style="color:#4b0082; border-bottom:2px solid #4b0082;">⭐ Skills</h3>
     <ul>
-      <li>Excellent Communication & Presentation</li>
+      <li>Communication & Presentation</li>
       <li>Teamwork & Leadership</li>
       <li>Active Listening</li>
       <li>Adaptability</li>
@@ -35,7 +49,7 @@
       <li>Cross-cultural Understanding</li>
     </ul>
 
-    <h3 style="color:#8000ff; border-bottom:2px solid #8000ff; padding-bottom:5px;">🏆 Certificates</h3>
+    <h3 style="color:#4b0082; border-bottom:2px solid #4b0082;">🏆 Certificates</h3>
     <ul>
       <li>Business Knowledge Sharing Workshop (2024)</li>
       <li>Career Planning and Job Search (2018)</li>
@@ -43,37 +57,40 @@
       <li>General English Elementary Level (2017)</li>
       <li>High School Certificate (2017)</li>
     </ul>
-
   </div>
 
   <!-- MAIN CONTENT -->
-  <div style="flex:2; min-width:300px; padding:20px; line-height:1.6;">
+  <div style="flex:2; min-width:300px; background:#f4f4f4; padding:30px 40px; line-height:1.6;">
 
-    <!-- Header with photo, name, title -->
-    <div style="display:flex; align-items:center; justify-content:flex-start; background:#e8e0f8; padding:20px; border-radius:12px; margin-bottom:20px;">
-      <img src="amscvphoto.jpg" alt="Aye Mon San Photo" style="width:120px; height:120px; border-radius:12px; object-fit:cover; margin-right:20px;">
-      <div>
-        <h1 style="margin:0; font-size:2em; color:#8000ff;">Aye Mon San</h1>
-        <h3 style="margin:5px 0 0 0; color:#5a2db5;">English Instructor</h3>
-      </div>
-    </div>
-
-    <h3 style="color:#8000ff; border-bottom:2px solid #8000ff; padding-bottom:5px;">🎯 Career Objective</h3>
+    <h3 style="color:#4b0082; border-bottom:3px solid #d0b3f2;">🎯 Career Objective</h3>
     <p>Motivated and passionate English Communication student with strong interest in teaching, intercultural communication, and lifelong learning. Experienced in volunteer teaching and community education projects. Dedicated to fostering inclusive and engaging learning environments that encourage students to develop linguistic and cultural competence.</p>
 
-    <h3 style="color:#8000ff; border-bottom:2px solid #8000ff; padding-bottom:5px;">💼 Work Experience</h3>
+    <h3 style="color:#4b0082; border-bottom:3px solid #d0b3f2;">💼 Work Experience</h3>
+    <p><b>Freelance English Tutor (Online)</b> — Sep 2024 – Jul 2025</p>
     <ul>
-      <li><b>Freelance English Tutor (Online)</b> — Sep 2024 – Jul 2025<br>Provided one-on-one and group English lessons to learners from diverse backgrounds. Focused on improving conversation, grammar, and pronunciation.</li>
-      <li><b>Accountant — Nay La Kabar Co., Ltd</b> — Nov 2018 – Jan 2019<br>Handled financial records and assisted in preparing daily reports. Developed attention to detail and organizational skills.</li>
-      <li><b>Volunteer Teacher — Chiang Rai Kindergarten (Painting Project)</b> — Jan 2025<br>Assisted in school improvement projects and English-related activities.</li>
+      <li>Provided one-on-one and group English lessons to learners from diverse backgrounds.</li>
+      <li>Focused on improving conversation, grammar, and pronunciation through interactive sessions.</li>
     </ul>
 
-    <h3 style="color:#8000ff; border-bottom:2px solid #8000ff; padding-bottom:5px;">🎓 Education</h3>
+    <p><b>Accountant — Nay La Kabar Co., Ltd</b> — Nov 2018 – Jan 2019</p>
     <ul>
-      <li><b>Payap University</b> — B.A. English Communication Arts (2024 – Present)</li>
-      <li><b>Mon National College</b> — Associate Degree (2021 – 2024)</li>
-      <li><b>Hpa-An Distant University</b> — B.A. English (2018 – 2019)</li>
+      <li>Handled financial records and assisted in preparing daily reports.</li>
     </ul>
+
+    <p><b>Volunteer Teacher — Chiang Rai Kindergarten</b> — Jan 2025</p>
+    <ul>
+      <li>Assisted in school improvement projects and English-related activities.</li>
+    </ul>
+
+    <h3 style="color:#4b0082; border-bottom:3px solid #d0b3f2;">🎓 Education</h3>
+    <p>B.A. English Communication Arts — Payap University (2024 – Present)</p>
+    <p>Associate Degree — Mon National College (2021 – 2024)</p>
+    <p>B.A. English — Hpa-An Distant University (2018 – 2019)</p>
+
+    <h3 style="color:#4b0082; border-bottom:3px solid #d0b3f2;">🔗 Online Presence</h3>
+    <p><a href="mailto:miayemonsan34@gmail.com" style="color:#4b0082;">Email</a></p>
+    <p><a href="https://github.com/yourusername" target="_blank" style="color:#4b0082;">GitHub</a></p>
+    <p>LinkedIn — (Add if available)</p>
 
   </div>
 </div>
