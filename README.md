@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -14,51 +15,84 @@
 
   /* Header */
   .header {
-    background-color: #e6d6f7; /* Light purple */
+    background-color: #e6d6f7; /* light purple */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 30px 40px;
+    padding: 20px 40px;
     border-bottom: 1px solid #d0b3f2;
     flex-wrap: wrap;
   }
-  .header-info h1 {
-    margin: 0;
-    font-size: 28px;
-    color: #4b0082;
+  .header-profile {
+    display: flex;
+    align-items: center;
   }
-  .header-info h2 {
-    margin: 5px 0 0 0;
-    font-size: 18px;
-    font-weight: 400;
-    color: #333;
-  }
-  .header img {
+  .header-profile img {
     width: 120px;
     height: 120px;
     border-radius: 12px;
     object-fit: cover;
+    margin-left: 20px;
+  }
+  .header-info {
+    text-align: right;
+  }
+  .header-info h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #4b0082;
+  }
+  .header-info h2 {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
   }
 
-  /* Container for main content */
+  /* Main container */
   .container {
     max-width: 900px;
     margin: 30px auto;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    padding: 30px 40px;
+    display: flex;
+    gap: 30px;
+    padding: 0 20px;
+    flex-wrap: wrap;
   }
 
-  h3 {
+  /* Sidebar */
+  .sidebar {
+    flex: 1 1 30%;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 250px;
+    box-sizing: border-box;
+  }
+  .sidebar h3 {
     color: #6a0dad;
     margin-bottom: 10px;
-    font-size: 18px;
   }
-  .section {
+  .sidebar ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .sidebar li {
+    margin-bottom: 8px;
+  }
+
+  /* Main content */
+  .main {
+    flex: 1 1 65%;
+    min-width: 300px;
+  }
+  .main h3 {
+    color: #6a0dad;
+    margin-bottom: 10px;
+  }
+  .main .section {
     margin-bottom: 25px;
   }
-  .section ul {
+  .main ul {
     list-style: disc;
     padding-left: 20px;
   }
@@ -74,13 +108,25 @@
   /* Responsive */
   @media (max-width: 768px) {
     .header {
-      flex-direction: column;
+      justify-content: center;
       text-align: center;
     }
-    .header img {
-      margin-top: 20px;
-      width: 100px;
-      height: 100px;
+    .header-info {
+      text-align: center;
+    }
+    .header-profile {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .header-profile img {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+    .container {
+      flex-direction: column;
+    }
+    .sidebar, .main {
+      flex: 1 1 100%;
     }
   }
 </style>
@@ -89,64 +135,27 @@
 
 <!-- Header -->
 <div class="header">
-  <div class="header-info">
-    <h1>Aye Mon San</h1>
-    <h2>English Instructor</h2>
+  <div class="header-profile">
+    <div class="header-info">
+      <h1>Aye Mon San</h1>
+      <h2>English Instructor</h2>
+      <p>Payap University, International College</p>
+      <p>Chiang Mai, Thailand</p>
+    </div>
+    <img src="amscvphoto.jpg" alt="Aye Mon San Photo">
   </div>
-  <img src="amscvphoto.jpg" alt="Aye Mon San Photo">
 </div>
 
-<!-- Main Content -->
+<!-- Body -->
 <div class="container">
-  <div class="section">
-    <h3>🧭 Professional Summary</h3>
-    <p>Motivated and passionate English Communication student with strong interest in teaching, intercultural communication, and lifelong learning. Experienced in volunteer teaching and community education projects. Dedicated to fostering inclusive and engaging learning environments that encourage students to develop linguistic and cultural competence.</p>
-  </div>
-
-  <div class="section">
-    <h3>🎓 Education</h3>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>Contact</h3>
     <ul>
-      <li>B.A. English Communication Arts — Payap University (2024 – Present)</li>
-      <li>Associate Degree — Mon National College (2021 – 2024)</li>
-      <li>B.A. English — Hpa-An Distant University (2018 – 2019)</li>
+      <li>📧 <a href="mailto:miayemonsan34@gmail.com">miayemonsan34@gmail.com</a></li>
+      <li>📞 092-396-9849</li>
     </ul>
-  </div>
 
-  <div class="section">
-    <h3>💼 Work Experience</h3>
-    <ul>
-      <li>Freelance English Tutor (Online) — Sep 2024 – Jul 2025  
-      Provided one-on-one and group English lessons to learners from diverse backgrounds. Focused on improving conversation, grammar, and pronunciation through interactive sessions.</li>
-      <li>Accountant — Nay La Kabar Co., Ltd (Nov 2018 – Jan 2019)  
-      Handled financial records and assisted in preparing daily reports. Developed attention to detail and organizational skills.</li>
-      <li>Volunteer Teacher — Chiang Rai Kindergarten (Painting Project) (Jan 2025)  
-      Assisted in school improvement projects and English-related activities.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h3>Volunteer Experience</h3>
-    <ul>
-      <li>English Teaching Assistant — Hpa-An Distant University (2018)</li>
-      <li>Teacher — Mon Primary School (2020–2021)</li>
-      <li>Teacher — Dhamma School (2019–2020)</li>
-      <li>Teacher — Mon Literature Program (2016–2018)</li>
-      <li>Online English Sharing Lessons — Ongoing</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h3>Certifications & Training</h3>
-    <ul>
-      <li>Business Knowledge Sharing Workshop (2024)</li>
-      <li>Career Planning and Job Search (2018)</li>
-      <li>Mon Intensive English Program (2018)</li>
-      <li>General English Elementary Level (2017)</li>
-      <li>High School Certificate (2017)</li>
-    </ul>
-  </div>
-
-  <div class="section">
     <h3>Languages</h3>
     <ul>
       <li>Mon — Native</li>
@@ -154,9 +163,7 @@
       <li>English — Proficient</li>
       <li>Thai — Intermediate</li>
     </ul>
-  </div>
 
-  <div class="section">
     <h3>Skills</h3>
     <ul>
       <li>Communication & Presentation</li>
@@ -168,24 +175,73 @@
     </ul>
   </div>
 
-  <div class="section">
-    <h3>Personal Information</h3>
-    <ul>
-      <li>Date of Birth: 30 September 1998</li>
-      <li>Gender: Male</li>
-      <li>Nationality: Myanmar</li>
-      <li>Marital Status: Single</li>
-      <li>Height / Weight: 164 cm / 52 kg</li>
-    </ul>
-  </div>
+  <!-- Main Content -->
+  <div class="main">
+    <div class="section">
+      <h3>Professional Summary</h3>
+      <p>Motivated and passionate English Communication student with strong interest in teaching, intercultural communication, and lifelong learning. Experienced in volunteer teaching and community education projects. Dedicated to fostering inclusive and engaging learning environments that encourage students to develop linguistic and cultural competence.</p>
+    </div>
 
-  <div class="section">
-    <h3>Online Presence</h3>
-    <ul>
-      <li><a href="mailto:miayemonsan34@gmail.com">Email</a></li>
-      <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
-      <li>LinkedIn — (Add if available)</li>
-    </ul>
+    <div class="section">
+      <h3>Education</h3>
+      <ul>
+        <li>B.A. English Communication Arts — Payap University (2024 – Present)</li>
+        <li>Associate Degree — Mon National College (2021 – 2024)</li>
+        <li>B.A. English — Hpa-An Distant University (2018 – 2019)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Work Experience</h3>
+      <ul>
+        <li>Freelance English Tutor (Online) — Sep 2024 – Jul 2025  
+        Provided one-on-one and group English lessons to learners from diverse backgrounds.</li>
+        <li>Accountant — Nay La Kabar Co., Ltd (Nov 2018 – Jan 2019)</li>
+        <li>Volunteer Teacher — Chiang Rai Kindergarten (Painting Project) (Jan 2025)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Volunteer Experience</h3>
+      <ul>
+        <li>English Teaching Assistant — Hpa-An Distant University (2018)</li>
+        <li>Teacher — Mon Primary School (2020–2021)</li>
+        <li>Teacher — Dhamma School (2019–2020)</li>
+        <li>Teacher — Mon Literature Program (2016–2018)</li>
+        <li>Online English Sharing Lessons — Ongoing</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Certifications & Training</h3>
+      <ul>
+        <li>Business Knowledge Sharing Workshop (2024)</li>
+        <li>Career Planning and Job Search (2018)</li>
+        <li>Mon Intensive English Program (2018)</li>
+        <li>General English Elementary Level (2017)</li>
+        <li>High School Certificate (2017)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Personal Information</h3>
+      <ul>
+        <li>Date of Birth: 30 September 1998</li>
+        <li>Gender: Male</li>
+        <li>Nationality: Myanmar</li>
+        <li>Marital Status: Single</li>
+        <li>Height / Weight: 164 cm / 52 kg</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Online Presence</h3>
+      <ul>
+        <li><a href="mailto:miayemonsan34@gmail.com">Email</a></li>
+        <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+        <li>LinkedIn — (Add if available)</li>
+      </ul>
+    </div>
   </div>
 </div>
 
