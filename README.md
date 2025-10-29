@@ -1,12 +1,20 @@
+# 💼 Aye Mon San - Resume (HTML + CSS)
+
+This is my personal resume design using pure HTML and CSS.
+
+## 🌐 Preview
+You can open the file in any browser to view the design.
+
+---
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aye Mon San - Resume</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
 <style>
     body {
         font-family: 'Poppins', sans-serif;
@@ -15,7 +23,6 @@
         padding: 0;
         color: #333;
     }
-
     .resume-container {
         max-width: 1000px;
         background: #fff;
@@ -24,7 +31,6 @@
         box-shadow: 0 0 15px rgba(0,0,0,0.1);
         overflow: hidden;
     }
-
     .header {
         background: #2F4F4F;
         color: #fff;
@@ -32,7 +38,6 @@
         align-items: center;
         padding: 25px;
     }
-
     .profile-photo {
         width: 150px;
         height: 150px;
@@ -41,27 +46,22 @@
         border: 5px solid #fff;
         margin-right: 25px;
     }
-
     .header-info h1 {
         margin: 0;
         font-size: 35px;
         font-weight: 700;
     }
-
     .header-info p {
         margin: 5px 0;
         font-size: 18px;
     }
-
     .content {
         display: grid;
         grid-template-columns: 35% 65%;
     }
-
     .left, .right {
         padding: 25px;
     }
-
     .section-title {
         font-size: 20px;
         font-weight: 600;
@@ -69,17 +69,14 @@
         margin-bottom: 12px;
         border-bottom: 3px solid #000000;
     }
-
     ul {
         margin: 0;
         padding-left: 18px;
     }
-
     p, li {
         font-size: 14px;
         line-height: 1.5rem;
     }
-
     .info-block p {
         margin: 6px 0;
     }
@@ -87,9 +84,7 @@
 </head>
 
 <body>
-
 <div class="resume-container">
-
     <div class="header">
         <img src="amscvphoto.jpg" alt="Profile Photo" class="profile-photo">
         <div class="header-info">
@@ -97,44 +92,34 @@
             <p>Aspiring English Instructor</p>
         </div>
     </div>
-
     <div class="content">
-
-        <!-- ✅ Left Column -->
         <div class="left">
-
             <div class="section-title">Contact Info</div>
             <div class="info-block">
                 <p>📍 Chiang Mai, Thailand</p>
                 <p>📞 0923969849</p>
                 <p>📧 miayemonsan34@gmail.com</p>
             </div>
-
             <div class="section-title">Personal Info</div>
             <p>Gender : Male</p>
             <p>DOB : 30 Sep 1998</p>
             <p>Nationality : Myanmar</p>
             <p>Marital Status : Single</p>
             <p>Height/Weight : 164 cm / 52 kg</p>
-
             <div class="section-title">Languages</div>
             <p>Burmese</p>
             <p>English</p>
             <p>Mon (Native)</p>
             <p>Thai</p>
-
             <div class="section-title">Skills</div>
             <p>• Organized</p>
             <p>• Active Listening</p>
             <p>• Interpersonal Communication</p>
             <p>• Adaptability</p>
             <p>• Cultural Awareness</p>
-
         </div>
 
-        <!-- ✅ Right Column -->
         <div class="right">
-
             <div class="section-title">About Me</div>
             <p>I am a dedicated and passionate individual with a strong commitment to becoming an English Instructor. I aim to create supportive learning environments where students feel confident and motivated.</p>
 
@@ -170,10 +155,8 @@
                 <li>Career Planning and Job Search (2018)</li>
                 <li>General English Elementary Level (2017)</li>
             </ul>
-
         </div>
     </div>
 </div>
-
 </body>
 </html>
