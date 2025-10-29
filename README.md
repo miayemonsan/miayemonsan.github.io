@@ -1,4 +1,4 @@
-<img src="amscvphoto.jpg" alt="Aye Mon San Photo" align="right" width="30%"/>
+<img src="amscvphoto.jpg" alt="Aye Mon San Photo" align="right" width="20%"/>
 
 # _Aye Mon San_
 > _English Instructor_<br />
