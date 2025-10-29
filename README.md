@@ -71,6 +71,12 @@
   .sidebar h3 {
     color: #6a0dad;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .sidebar h3::before {
+    content: "💡";
+    margin-right: 8px;
   }
   .sidebar ul {
     list-style: none;
@@ -88,6 +94,12 @@
   .main h3 {
     color: #6a0dad;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .main h3::before {
+    content: "📌";
+    margin-right: 8px;
   }
   .main .section {
     margin-bottom: 25px;
@@ -96,6 +108,19 @@
     list-style: disc;
     padding-left: 20px;
   }
+
+  /* Individual icons for sections */
+  .main h3.summary::before { content: "🧭"; }
+  .main h3.education::before { content: "🎓"; }
+  .main h3.work::before { content: "💼"; }
+  .main h3.volunteer::before { content: "🌱"; }
+  .main h3.certifications::before { content: "🏅"; }
+  .main h3.personal::before { content: "👤"; }
+  .main h3.online::before { content: "🔗"; }
+
+  .sidebar h3.skills::before { content: "🛠"; }
+  .sidebar h3.languages::before { content: "🌍"; }
+  .sidebar h3.contact::before { content: "📬"; }
 
   a {
     color: #6a0dad;
@@ -150,13 +175,13 @@
 <div class="container">
   <!-- Sidebar -->
   <div class="sidebar">
-    <h3>Contact</h3>
+    <h3 class="contact">Contact</h3>
     <ul>
       <li>📧 <a href="mailto:miayemonsan34@gmail.com">miayemonsan34@gmail.com</a></li>
       <li>📞 092-396-9849</li>
     </ul>
 
-    <h3>Languages</h3>
+    <h3 class="languages">Languages</h3>
     <ul>
       <li>Mon — Native</li>
       <li>Burmese — Fluent</li>
@@ -164,7 +189,7 @@
       <li>Thai — Intermediate</li>
     </ul>
 
-    <h3>Skills</h3>
+    <h3 class="skills">Skills</h3>
     <ul>
       <li>Communication & Presentation</li>
       <li>Teamwork & Leadership</li>
@@ -178,12 +203,12 @@
   <!-- Main Content -->
   <div class="main">
     <div class="section">
-      <h3>Professional Summary</h3>
+      <h3 class="summary">Professional Summary</h3>
       <p>Motivated and passionate English Communication student with strong interest in teaching, intercultural communication, and lifelong learning. Experienced in volunteer teaching and community education projects. Dedicated to fostering inclusive and engaging learning environments that encourage students to develop linguistic and cultural competence.</p>
     </div>
 
     <div class="section">
-      <h3>Education</h3>
+      <h3 class="education">Education</h3>
       <ul>
         <li>B.A. English Communication Arts — Payap University (2024 – Present)</li>
         <li>Associate Degree — Mon National College (2021 – 2024)</li>
@@ -192,7 +217,7 @@
     </div>
 
     <div class="section">
-      <h3>Work Experience</h3>
+      <h3 class="work">Work Experience</h3>
       <ul>
         <li>Freelance English Tutor (Online) — Sep 2024 – Jul 2025  
         Provided one-on-one and group English lessons to learners from diverse backgrounds.</li>
@@ -202,7 +227,7 @@
     </div>
 
     <div class="section">
-      <h3>Volunteer Experience</h3>
+      <h3 class="volunteer">Volunteer Experience</h3>
       <ul>
         <li>English Teaching Assistant — Hpa-An Distant University (2018)</li>
         <li>Teacher — Mon Primary School (2020–2021)</li>
@@ -213,7 +238,7 @@
     </div>
 
     <div class="section">
-      <h3>Certifications & Training</h3>
+      <h3 class="certifications">Certifications & Training</h3>
       <ul>
         <li>Business Knowledge Sharing Workshop (2024)</li>
         <li>Career Planning and Job Search (2018)</li>
@@ -224,7 +249,7 @@
     </div>
 
     <div class="section">
-      <h3>Personal Information</h3>
+      <h3 class="personal">Personal Information</h3>
       <ul>
         <li>Date of Birth: 30 September 1998</li>
         <li>Gender: Male</li>
@@ -235,7 +260,7 @@
     </div>
 
     <div class="section">
-      <h3>Online Presence</h3>
+      <h3 class="online">Online Presence</h3>
       <ul>
         <li><a href="mailto:miayemonsan34@gmail.com">Email</a></li>
         <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
