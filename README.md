@@ -7,253 +7,194 @@
 <style>
   body {
     font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
     margin: 0;
-    background-color: #f4f7f8;
+    padding: 0;
     color: #333;
   }
 
-  /* Header bar */
-  .header {
-    width: 100%;
-    height: 120px;
-    background: #6a0dad; /* Purple header */
-    position: relative;
-  }
-
-  /* Container */
-  .container {
-    max-width: 900px;
-    margin: -50px auto 40px; /* negative top margin to overlap profile */
+  .resume-container {
+    max-width: 1000px;
     background: #fff;
+    margin: 25px auto;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
   }
 
   /* Sidebar */
-  .sidebar {
-    background: #7b1fa2; /* slightly lighter purple */
-    color: #fff;
-    padding: 100px 25px 40px 25px; /* top padding to accommodate profile */
+  .left {
     flex: 1 1 35%;
     min-width: 280px;
+    background: #6a0dad;
+    color: #fff;
+    padding: 60px 25px 40px 25px;
     position: relative;
   }
 
-  /* Profile photo overlapping header & sidebar */
+  /* Profile */
   .profile {
-    position: absolute;
-    top: -50px;
-    left: 25px;
-    display: flex;
-    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
   }
   .profile img {
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    border: 4px solid #fff;
     object-fit: cover;
-    margin-right: 15px;
-    background: #fff;
+    border: 4px solid #fff;
+    margin-bottom: 10px;
   }
-  .profile-info h1 {
+  .profile h1 {
     font-size: 22px;
     margin: 0;
     font-weight: 600;
   }
-  .profile-info h2 {
+  .profile h2 {
     font-size: 16px;
     font-weight: 400;
     margin: 4px 0 0 0;
   }
 
-  .sidebar hr {
-    border: 0.5px solid #d3a4ff;
-    margin: 20px 0;
-  }
-  .sidebar p, .sidebar li {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  .sidebar ul {
-    list-style: none;
-    padding-left: 0;
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #d3a4ff;
+    padding-bottom: 4px;
   }
 
-  /* Main content */
-  .main {
-    flex: 1 1 65%;
-    padding: 60px 35px 40px 35px; /* top padding for symmetry */
-    min-width: 300px;
+  p, li {
+    font-size: 14px;
+    line-height: 1.5rem;
+    margin: 4px 0;
   }
-  .main h3 {
-    color: #6a0dad;
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-  .section {
-    margin-bottom: 30px;
-  }
-  .section ul {
-    list-style: disc;
-    padding-left: 20px;
-  }
-  .languages table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  .languages th, .languages td {
-    text-align: left;
-    padding: 5px 0;
-  }
-  .languages th {
-    width: 40%;
+  ul {
+    padding-left: 18px;
+    margin: 0;
   }
 
   a {
-    color: #d3a4ff;
+    color: #fff;
     text-decoration: none;
   }
   a:hover {
     text-decoration: underline;
   }
 
+  /* Main content */
+  .right {
+    flex: 1 1 65%;
+    min-width: 300px;
+    padding: 60px 35px 40px 35px;
+    background: #fff;
+    color: #333;
+  }
+  .right .section-title {
+    border-bottom: 2px solid #6a0dad;
+  }
+  .right p, .right li {
+    color: #333;
+  }
+  .right a {
+    color: #6a0dad;
+  }
+
   /* Responsive */
   @media (max-width: 768px) {
-    .container {
+    .resume-container {
       flex-direction: column;
-      margin-top: 0;
     }
-    .sidebar, .main {
+    .left, .right {
       flex: 1 1 100%;
       min-width: auto;
-      padding-top: 80px; /* adjust sidebar top padding for mobile */
+      padding: 40px 20px;
     }
-    .profile {
-      position: relative;
-      top: 0;
-      left: 0;
-      margin-bottom: 20px;
+    .profile img {
+      width: 100px;
+      height: 100px;
     }
   }
 </style>
 </head>
 <body>
 
-<!-- Header Bar -->
-<div class="header"></div>
+<div class="resume-container">
 
-<div class="container">
-  <!-- Sidebar -->
-  <div class="sidebar">
+  <!-- Left Sidebar -->
+  <div class="left">
     <div class="profile">
       <img src="amscvphoto.jpg" alt="Aye Mon San Photo">
-      <div class="profile-info">
-        <h1>Aye Mon San</h1>
-        <h2>English Instructor</h2>
-      </div>
+      <h1>Aye Mon San</h1>
+      <h2>English Instructor</h2>
     </div>
 
-    <p>Chiang Mai, Thailand</p>
+    <div class="section-title">Contact Info</div>
+    <p>📍 Chiang Mai, Thailand</p>
+    <p>📞 0923969849</p>
     <p>📧 <a href="mailto:miayemonsan34@gmail.com">miayemonsan34@gmail.com</a></p>
-    <p>📞 092-396-9849</p>
-    <hr>
 
-    <div class="section">
-      <h3>🌱 Volunteer Experience</h3>
-      <ul>
-        <li>English Teaching Assistant — Hpa-An Distant University (2018)</li>
-        <li>Teacher — Mon Primary School (2020–2021)</li>
-        <li>Teacher — Dhamma School (2019–2020)</li>
-        <li>Teacher — Mon Literature Program (2016–2018)</li>
-        <li>Online English Sharing Lessons — Ongoing</li>
-      </ul>
-    </div>
+    <div class="section-title">Personal Info</div>
+    <p>Gender: Male</p>
+    <p>DOB: 30 Sep 1998</p>
+    <p>Nationality: Myanmar</p>
+    <p>Marital Status: Single</p>
+    <p>Height/Weight: 164 cm / 52 kg</p>
 
-    <div class="section">
-      <h3>🏅 Certifications & Training</h3>
-      <ul>
-        <li>Business Knowledge Sharing Workshop (2024)</li>
-        <li>Career Planning and Job Search (2018)</li>
-        <li>Mon Intensive English Program (2018)</li>
-        <li>General English Elementary Level (2017)</li>
-        <li>High School Certificate (2017)</li>
-      </ul>
-    </div>
+    <div class="section-title">Languages</div>
+    <p>Mon (Native)</p>
+    <p>Burmese</p>
+    <p>English</p>
+    <p>Thai</p>
 
-    <div class="section languages">
-      <h3>🌍 Languages</h3>
-      <table>
-        <tr><th>Mon</th><td>Native</td></tr>
-        <tr><th>Burmese</th><td>Fluent</td></tr>
-        <tr><th>English</th><td>Proficient</td></tr>
-        <tr><th>Thai</th><td>Intermediate</td></tr>
-      </table>
-    </div>
+    <div class="section-title">Skills</div>
+    <p>• Organized</p>
+    <p>• Active Listening</p>
+    <p>• Interpersonal Communication</p>
+    <p>• Adaptability</p>
+    <p>• Cultural Awareness</p>
   </div>
 
-  <!-- Main -->
-  <div class="main">
-    <div class="section">
-      <h3>🧭 Professional Summary</h3>
-      <p>Motivated and passionate English Communication student with strong interest in teaching, intercultural communication, and lifelong learning. Experienced in volunteer teaching and community education projects. Dedicated to fostering inclusive and engaging learning environments that encourage students to develop linguistic and cultural competence.</p>
-    </div>
+  <!-- Right Content -->
+  <div class="right">
+    <div class="section-title">About Me</div>
+    <p>I am a dedicated and passionate individual with a strong commitment to becoming an English Instructor. I aim to create supportive learning environments where students feel confident and motivated.</p>
 
-    <div class="section">
-      <h3>🎓 Education</h3>
-      <ul>
-        <li><b>Payap University</b> — B.A. in English Communication Arts (2024 – Present)</li>
-        <li><b>Mon National College</b> — Associate Degree (2021 – 2024)</li>
-        <li><b>Hpa-An Distant University</b> — B.A. in English (2018 – 2019)</li>
-      </ul>
-    </div>
+    <div class="section-title">Education</div>
+    <ul>
+      <li>Payap University — Bachelor of English Communication Arts (2024 - Ongoing)</li>
+      <li>Mon National College — Associate Degree (2021 - 2024)</li>
+      <li>Hpa-An Distant University — Bachelor of English (2018 - 2019)</li>
+      <li>High School Graduate</li>
+    </ul>
 
-    <div class="section">
-      <h3>💼 Work Experience</h3>
-      <ul>
-        <li><b>Freelance English Tutor (Online)</b> (Sep 2024 – Jul 2025)<br>
-        Provided one-on-one and group English lessons to learners from diverse backgrounds. Focused on improving conversation, grammar, and pronunciation through interactive sessions.</li>
-        <li><b>Accountant — Nay La Kabar Co., Ltd</b> (Nov 2018 – Jan 2019)<br>
-        Handled financial records and assisted in preparing daily reports. Developed attention to detail and organizational skills.</li>
-        <li><b>Volunteer Teacher — Chiang Rai Kindergarten (Painting Project)</b> (Jan 2025)<br>
-        Assisted in school improvement projects and English-related activities.</li>
-      </ul>
-    </div>
+    <div class="section-title">Experience</div>
+    <ul>
+      <li>Freelance Online English Teaching (Sep 2024 - Jul 2025)</li>
+      <li>Painting at Chiang Rai Kindergarten (Jan 2025)</li>
+      <li>Accountant — Nay La Kabar Co., Ltd (Nov 2018 - Jan 2019)</li>
+    </ul>
 
-    <div class="section">
-      <h3>💡 Key Skills</h3>
-      <ul>
-        <li>Excellent Communication & Presentation</li>
-        <li>Teamwork & Leadership</li>
-        <li>Active Listening</li>
-        <li>Adaptability</li>
-        <li>Classroom Management</li>
-        <li>Cross-cultural Understanding</li>
-      </ul>
-    </div>
+    <div class="section-title">Volunteer</div>
+    <ul>
+      <li>English Teaching Assistant at Hpa-An Distant University (Sep - Oct 2018)</li>
+      <li>Teaching in Mon Primary School (Sep 2020 - Apr 2021)</li>
+      <li>Teaching in Dhamma School (Jun 2019 - Aug 2020)</li>
+      <li>Teaching Mon Literature in the Village (2016 - 2018)</li>
+      <li>Sharing English Lessons Online (Ongoing)</li>
+    </ul>
 
-    <div class="section">
-      <h3>👤 Personal Information</h3>
-      <ul>
-        <li>Date of Birth: 30 September 1998</li>
-        <li>Gender: Male</li>
-        <li>Nationality: Myanmar</li>
-        <li>Marital Status: Single</li>
-        <li>Height / Weight: 164 cm / 52 kg</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h3>🔗 Online Presence</h3>
-      <ul>
-        <li><a href="mailto:miayemonsan34@gmail.com">Email</a></li>
-        <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
-        <li><a href="#">LinkedIn (Add if available)</a></li>
-      </ul>
-    </div>
+    <div class="section-title">Certifications</div>
+    <ul>
+      <li>Workshop of Business Knowledge Sharing (2024)</li>
+      <li>High School (2016-2017)</li>
+      <li>Mon Intensive English Program (2018)</li>
+      <li>Career Planning and Job Search (2018)</li>
+      <li>General English Elementary Level (2017)</li>
+    </ul>
   </div>
 </div>
 
