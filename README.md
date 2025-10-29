@@ -11,9 +11,19 @@
     background-color: #f4f7f8;
     color: #333;
   }
+
+  /* Header bar */
+  .header {
+    width: 100%;
+    height: 120px;
+    background: #6a0dad; /* Purple header */
+    position: relative;
+  }
+
+  /* Container */
   .container {
     max-width: 900px;
-    margin: 40px auto;
+    margin: -50px auto 40px; /* negative top margin to overlap profile */
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
@@ -24,26 +34,30 @@
 
   /* Sidebar */
   .sidebar {
-    background: #6a0dad; /* Purple */
+    background: #7b1fa2; /* slightly lighter purple */
     color: #fff;
-    padding: 40px 25px;
+    padding: 100px 25px 40px 25px; /* top padding to accommodate profile */
     flex: 1 1 35%;
     min-width: 280px;
+    position: relative;
   }
 
-  /* Profile section */
+  /* Profile photo overlapping header & sidebar */
   .profile {
+    position: absolute;
+    top: -50px;
+    left: 25px;
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
   }
   .profile img {
-    width: 90px; 
-    height: 90px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
-    margin-right: 15px;
+    border: 4px solid #fff;
     object-fit: cover;
-    border: 3px solid #fff;
+    margin-right: 15px;
+    background: #fff;
   }
   .profile-info h1 {
     font-size: 22px;
@@ -72,7 +86,7 @@
   /* Main content */
   .main {
     flex: 1 1 65%;
-    padding: 40px 35px;
+    padding: 60px 35px 40px 35px; /* top padding for symmetry */
     min-width: 300px;
   }
   .main h3 {
@@ -111,19 +125,26 @@
   @media (max-width: 768px) {
     .container {
       flex-direction: column;
+      margin-top: 0;
     }
     .sidebar, .main {
       flex: 1 1 100%;
       min-width: auto;
+      padding-top: 80px; /* adjust sidebar top padding for mobile */
     }
     .profile {
-      flex-direction: row;
+      position: relative;
+      top: 0;
+      left: 0;
       margin-bottom: 20px;
     }
   }
 </style>
 </head>
 <body>
+
+<!-- Header Bar -->
+<div class="header"></div>
 
 <div class="container">
   <!-- Sidebar -->
