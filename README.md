@@ -62,7 +62,7 @@
   <!-- MAIN CONTENT -->
   <div style="flex:2; min-width:300px; background:#e6d6f7; padding:30px 40px; line-height:1.6;">
 
-    <h3 style="color:#4b0082; border-bottom:3px solid #d0b3f2;">😍Career Objective</h3>
+    <h3 style="color:#4b0082; border-bottom:3px solid #d0b3f2;">Career Objective</h3>
     <p>Motivated and passionate English Communication student with strong interest in teaching, intercultural communication, and lifelong learning. Experienced in volunteer teaching and community education projects. Dedicated to fostering inclusive and engaging learning environments that encourage students to develop linguistic and cultural competence.</p>
 
     <h3 style="color:#4b0082; border-bottom:3px solid #d0b3f2;"> Work Experience</h3>
