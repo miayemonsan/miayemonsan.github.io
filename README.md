@@ -25,10 +25,9 @@
     <h3 style="color:#4b0082; border-bottom:2px solid #4b0082;"> Personal Info</h3>
     <ul style="list-style:none; padding:0;">
       <li><b>Gender:</b> Female</li>
-      <li><b>DOB:</b> 30 September 1998</li>
-      <li><b>Nationality:</b> Myanmar (Native - Mon)</li>
+      <li><b>Age:</b> 27</li>
+      <li><b>Nationality:</b> Myanmar </li>
       <li><b>Marital Status:</b> Single</li>
-      <li><b>Height/Weight:</b> 164 cm / 52 kg</li>
     </ul>
 
     <h3 style="color:#4b0082; border-bottom:2px solid #4b0082;"> Languages</h3>
@@ -42,6 +41,7 @@
     <h3 style="color:#4b0082; border-bottom:2px solid #4b0082;"> Skills</h3>
     <ul>
       <li>Communication & Presentation</li>
+      <li>Presentation and Public Speaking</li>
       <li>Teamwork & Leadership</li>
       <li>Active Listening</li>
       <li>Adaptability</li>
@@ -51,11 +51,12 @@
 
     <h3 style="color:#4b0082; border-bottom:2px solid #4b0082;"> Certificates</h3>
     <ul>
-      <li>Business Knowledge Sharing Workshop (2024)</li>
-      <li>Career Planning and Job Search (2018)</li>
-      <li>Mon Intensive English Program (2018)</li>
-      <li>General English Elementary Level (2017)</li>
-      <li>High School Certificate (2017)</li>
+      <li>Teaching English to Refugee and Diplaced Learner</li>
+      <li>Business Knowledge Sharing Workshop</li>
+      <li>Career Planning and Job Search</li>
+      <li>Mon Intensive English Program</li>
+      <li>General English Elementary Level</li>
+      <li>High School Certificate</li>
     </ul>
   </div>
 
@@ -68,8 +69,14 @@
     <h3 style="color:#4b0082; border-bottom:3px solid #d0b3f2;"> Work Experience</h3>
     <p><b>Freelance English Tutor (Online)</b> (Sep 2024 – Jul 2025)</p>
     <ul>
-      <li>Provided one-on-one and group English lessons to learners from diverse backgrounds.</li>
-      <li>Focused on improving conversation, grammar, and pronunciation through interactive sessions.</li>
+      <li>Provided one-on-one and group English lessons to learners from diverse backgrounds</li>
+      <li>Focused on improving conversation, grammar, and pronunciation through interactive sessions</li>
+    </ul>
+
+ <p><b> General English Teacher, Poy English Program</b> (2025 - 2026)</p>
+    <ul>
+      <li>Teaching English to Online English Learners and promoting welcoming and inclusive eduction</li>
+      <li> Intergrating practical speaking conversation and grammar</li>
     </ul>
 
     <p><b>Accountant — Nay La Kabar Co., Ltd</b> (Nov 2018 – Jan 2019)</p>
